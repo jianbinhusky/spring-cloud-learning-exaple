@@ -1,15 +1,15 @@
-package source.base;
-
-import org.springframework.core.annotation.AliasFor;
+package source.base.annotiondemo;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * Created by hujianbin on 18/1/11.
+ */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface Alias {
-    @AliasFor
-    String value();
+@Target(ElementType.METHOD)
+public @interface ActionListenerFor {
+    String source();
 }

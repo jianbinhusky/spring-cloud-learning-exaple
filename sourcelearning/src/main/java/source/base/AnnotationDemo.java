@@ -28,7 +28,9 @@ public class AnnotationDemo {
 
     public static void main(String[] args) {
         AnnotationDemo demo = new AnnotationDemo();
-        printAlias(demo);
+//        printAlias(demo);
+        UserBean userBean = new UserBean("Java", 1);
+        doTest(userBean);
     }
 
     private static void printAlias(Object userBeanObject) {
